@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Любовь Лифшиц](https://up.htmlacademy.ru/htmlcss-individual/2/user/2532253).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк] (https://htmlacademy.ru/profile/id907403).
 
 ---
 
