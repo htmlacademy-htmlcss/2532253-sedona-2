@@ -1,69 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta name="description" content="HTML Academy: Седона">
+    <title>Седона</title>
   </head>
+
   <body>
-<header class="main-header">
-  <nav class="navigation">
-    <ul class="navigation-list">
-      <li class="navigation-item">
-        <a class="navigation-link" href="main.html">Главная</a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="about.html">О Седоне</a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="hotels.html">Гостиницы</a>
-      </li>
-    </ul>
-    <ul class="navigation-list navigation-user">
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Поиск</span></a>
-      </li>
-      <li class="navigation-item">
-        <a class="navigation-link" href="#">
-          <span class="visually-hidden">Избранное</span></a>
-      </li>
-          </ul>
-    <a class="button button-all" href="#">Хочу сюда!</a>
-  </nav>
-</header>
-<main class="main-index">
-  <h1 class="visually-hidden">Туристический город Седона</h1>
-  <img class="logo" src="#" alt="Логотип SEDONA">
-    <section class="advantages">
-      <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      <aside class="fact">
-        <p>Настоящий городок. Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-      </aside>
-      <img class="illustration" src="#" alt="Фото города">
-  </section>
-  <section class="advantages-2">
-    <h2 class="visually-hidden">Преимущества</h2>
-    <ul class="advantages-2-list">
-      <li class="advantages-2-item">
-        <h3 class="advantages-2-title">Небольшая площадь</h3>
-        <p class="advantages-2-description">Все достопримечательности находятся очень близко</p>
-      </li>
-      <li class="advantages-2-item">
-        <h3 class="advantages-2-title">Красивая дорога</h3>
-        <p class="advantages-2-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </li>
-      <li class="advantages-2-item">
-        <h3 class="advantages-2-title">Мало туристов</h3>
-        <p class="advantages-2-description">Большинство едет в Гранд Каньон и толпится там</p>
-      </li>
-    </ul>
+    <header class="page-header">
+      <nav class="navigation">
+        <a class="navigation-logo" href="index.html"><img src="#" alt="Логотип Седона">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+        <div class="navigation-user">
+          <a class="searhc-link" href="#">
+            <span class="visually-hidden">Поиск</span>
+          </a>
+          <a class="favourites-link" href="#">
+            <span class="visually-hidden">Избранное</span>
+          </a>
+          <a class="button button-brown" href="#">Хочу сюда!
+          </a>
+        </div>
+      </nav>
+    </header>
 
-  </section>
-</main>
+    <main class="page-inner">
+      <section class="selection">
+        <h1 class="selection-title">Гостиницы Седоны</h1>
+        <a class="selection-logo" href="index.html"></a><img src="#" alt="Домой">
+        <p class="selection-text">Гостиницы</p>
+        <div class="selection-filter" data-test="filter">
+          <h2 class="visually-hidden">Выбор гостиницы</h2>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+
+            <fieldset class="selection-filter-group">
+              <legend class="subtitle">Инфраструктура:</legend>
+              <label>
+                <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked>
+                Бассейн
+              </label>
+              <label>
+                <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
+                Парковка
+              </label>
+              <label>
+                <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
+                Wi-Fi
+              </label>
+            </fieldset>
+
+            <fieldset class="selection-filter-catalog">
+              <legend class="subtitle">Тип жилья:</legend>
+              <label>
+                <input class="control-input" type="radio" name="type" value="hotel" checked>
+                Гостиница
+              </label>
+              <label>
+                <input class="control-input" type="radio" name="type" value="motel">
+                Мотель
+              </label>
+              <label>
+                <input class="control-input" type="radio" name="type" value="apartments">
+                Апартаменты
+              </label>
+            </fieldset>
+
+            <fieldset class="selection-filter-costing">
+              <legend class="subtitle">Стоимость, ₽:</legend>
+              <label>
+                <input type="number" name="min-cost" value="0">
+                <span class="input-text">от</span>
+              </label>
+              <label>
+                <input type="number" name="max-cost" value="9000">
+                <span class="input-text">до</span>
+              </label>
+              <div class="slider-price">
+              </div>
+            </fieldset>
+
+            <div class="controls">
+              <button class="button-blue" type="submit">Применить</button>
+              <button class="invisible" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </div>
+      </section>
 
 
-<p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <section></section>
+      <section></section>
+    </main>
 
+
+    <footer class="footer">
+      <ul class="social-links">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy"><img src="#" alt="Логотип в контакте"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy"><img src="#" alt="Логотип телеграм"></a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Логотип ютуб"></a>
+        </li>
+      </ul>
+      <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-link" href="https://htmlacademy.ru/"><img src="#" alt="Логотип Академии"></a>
+    </footer>
   </body>
+
 </html>
