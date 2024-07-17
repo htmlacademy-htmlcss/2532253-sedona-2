@@ -42,13 +42,12 @@
           <h1 class="selection-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html" <img src="images/icons/icon-home-breadcrumbs.svg" width="13"
-                height="15" alt="Значок домой">
+              <a class="breadcrumbs-link" href="index.html">
+                <img src="images/icons/icon-home-breadcrumbs.svg" width="13" height="15" alt="Значок домой">
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#" <img src="images/icons/icon-breadcrumbs.svg" width="13" height="15"
-                alt="Значок стрелка">
+              <a class="breadcrumbs-link" href="#" alt="Значок стрелка">
               </a>
             </li>
             <li class="breadcrumbs-item">
@@ -203,38 +202,33 @@
               </li>
             </ul>
           </div>
-          <div class="pagination">
-            <ul class="pagination-pages">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current" href="catalog.html">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <span>...</span>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current" href="catalog.html">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-diver" href="#">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
         </section>
-        <section class="subscription-catalog" data-test="subscription">
-          <h2 class="subscription-title-catalog">Подпишитесь на рассылку</h2>
-          <p class="subscription-text-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <section class="subscription" data-test="subscription">
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+          <p class="subscription-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="subscription-form-mail">
-              <label for="subscription-mail">Ваш e-mail</label>
-              <input class="subscription-field" type="email" id="subscription-mail" name="subscription-mail"
-                placeholder="Ваш e-mail" required>
-            </p>
+            <input class="subscription-field" type="email" id="subscription-mail" name="subscription-mail"
+              placeholder="Ваш e-mail" required>
             <button class="button button-blue" type="submit">Подписаться</button>
           </form>
         </section>
