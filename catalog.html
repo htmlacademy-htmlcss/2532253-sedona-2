@@ -42,11 +42,11 @@
           <h1 class="selection-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
+              <a class="breadcrumbs-link-home" href="index.html">
                 <img src="images/icons/icon-home-breadcrumbs.svg" width="13" height="15" alt="Значок домой">
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item-arrow">
               <a class="breadcrumbs-link" href="#" alt="Значок стрелка">
               </a>
             </li>
@@ -105,18 +105,18 @@
               </fieldset>
               <fieldset class="selection-filter-costing">
                 <legend class="selection-filter-title">Стоимость, ₽:</legend>
-                <label>
-                  <span class="input-text">от</span>
-                  <input type="text-select" name="min-cost" value="0">
-                </label>
-                <label>
-                  <span class="input-text">до</span>
-                  <input type="text-select" name="max-cost" value="9000">
-                </label>
                 <div class="slider-price">
+                  <label class="label-min">
+                    <span class="input-text">от</span>
+                    <input type="text-select" name="min-cost" value="0">
+                  </label>
+                  <label class="label-max">
+                    <span class="input-text">до</span>
+                    <input type="text-select" name="max-cost" value="9000">
+                  </label>
                 </div>
               </fieldset>
-              <div class="controls">
+              <div class="apply-controls">
                 <button class="button-blue" type="submit">Применить</button>
                 <button class="button-invisible" type="reset">Сбросить</button>
               </div>
@@ -124,12 +124,14 @@
           </div>
         </section>
         <section class="sort">
-          <h3 class="sort-title">Найдено гостиниц: 38</h3>
-          <select class="sort-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="cheap">Сначала популярные</option>
-            <option value="cheap">Сначала дорогие</option>
-          </select>
+          <div class="sorting">
+            <h3 class="sort-title">Найдено гостиниц: 38</h3>
+            <select class="sort-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+          </div>
           <div class="view">
             <button class="sort-button" aria-label="Показать сеткой"></button>
             <button class="sort-button" aria-label="Показать по-одному"></button>
@@ -234,21 +236,22 @@
 
       <footer class="footer">
         <div class="footer-container">
-        <ul class="social-links">
-          <li class="social-item">
-            <a class="social-link social-link-vk" href="https://vk.com/htmlacademy" aria-label="Логотип в контакте"></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link social-link-tg" href="https://t.me/htmlacademy" aria-label="Логотип телеграм"></a>
-          </li>
-          <li class="social-item">
-            <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru"
-              aria-label="Логотип ютуб"></a>
-          </li>
-        </ul>
-        <a class="link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-link" href="https://htmlacademy.ru/" aria-label="Логотип Академии"></a>
-      </div>
+          <ul class="social-links">
+            <li class="social-item">
+              <a class="social-link social-link-vk" href="https://vk.com/htmlacademy"
+                aria-label="Логотип в контакте"></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link-tg" href="https://t.me/htmlacademy" aria-label="Логотип телеграм"></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link social-link-youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="Логотип ютуб"></a>
+            </li>
+          </ul>
+          <a class="link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <a class="footer-link" href="https://htmlacademy.ru/" aria-label="Логотип Академии"></a>
+        </div>
       </footer>
     </div>
   </body>
