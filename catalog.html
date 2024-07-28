@@ -37,7 +37,7 @@
           </div>
         </nav>
       </header>
-      <main class="page-inner">
+      <main class="main-container page-inner">
         <section class="selection">
           <h1 class="selection-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -56,7 +56,7 @@
           </ul>
           <div class="selection-filter" data-test="filter">
             <h2 class="visually-hidden">Выбор гостиницы</h2>
-            <form action="https://echo.htmlacademy.ru/" method="get">
+            <form class="form" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="selection-filter-group">
                 <legend class="selection-filter-title">Инфраструктура:</legend>
                 <ul class="selection-filter-list">
@@ -131,12 +131,14 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
+            <div class="view">
+              <type-button class="sort-button-1" aria-label="Показать сеткой"></type-button>
+              <type-button class="sort-button-2" aria-label="Показать по-одному"></type-button>
+              <type-button class="sort-button-3" aria-label="Показать списком"></type-button>
+            </div>
           </div>
-          <div class="view">
-            <button class="sort-button" aria-label="Показать сеткой"></button>
-            <button class="sort-button" aria-label="Показать по-одному"></button>
-            <button class="sort-button" aria-label="Показать списком"></button>
-          </div>
+
+
           <div class="product">
             <ul class="product-list">
               <li class="product-card">
@@ -168,7 +170,6 @@
                 <a class="product-card-button button-green" href="#">В избранном</a>
                 <span class="product-stars" aria-label="Рейтинг в звездах"></span>
                 <span class="product-card-rating">Рейтинг: 9,2</span>
-
               </li>
               <li class="product-card">
                 <a class="product-card-link" href="#">
@@ -249,7 +250,9 @@
                 aria-label="Логотип ютуб"></a>
             </li>
           </ul>
-          <a class="link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          <div class="tel">
+            <a class="link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+          </div>
           <a class="footer-link" href="https://htmlacademy.ru/" aria-label="Логотип Академии"></a>
         </div>
       </footer>
