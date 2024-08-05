@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Любовь Лифшиц](https://up.htmlacademy.ru/htmlcss-individual/2/user/2532253).
-* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 * Сайт: [Сайтик мой сайтик](https://lailaalba.github.io/2532253-sedona-2/).
 
 ---
