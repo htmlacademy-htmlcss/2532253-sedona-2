@@ -63,19 +63,19 @@
                 <ul class="selection-filter-list">
                   <li class="selection-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked>
+                      <input class="control-input group" type="checkbox" name="infrastructure" value="pool" checked>
                       Бассейн
                     </label>
                   </li>
                   <li class="selection-filter-item">
                     <label>
-                      <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>
+                      <input class="control-input group" type="checkbox" name="infrastructure" value="parking" checked>
                       Парковка
                     </label>
                   </li>
                   <li class="selection-filter-item">
                     <label>
-                      <input class="control-input" type="checkbox" name="infrastructure" value="Wi-Fi">
+                      <input class="control-input group" type="checkbox" name="infrastructure" value="Wi-Fi">
                       Wi-Fi
                     </label>
                   </li>
@@ -86,19 +86,19 @@
                 <ul class="selection-filter-list">
                   <li class="selection-filter-item">
                     <label>
-                      <input class="control-input" type="radio" name="type" value="hotel" checked>
+                      <input class="control-input catalog" type="radio" name="type" value="hotel" checked>
                       Гостиница
                     </label>
                   </li>
                   <li class="selection-filter-item">
                     <label>
-                      <input class="control-input" type="radio" name="type" value="motel">
+                      <input class="control-input catalog" type="radio" name="type" value="motel">
                       Мотель
                     </label>
                   </li>
                   <li class="selection-filter-item">
                     <label>
-                      <input class="control-input" type="radio" name="type" value="apartments">
+                      <input class="control-input catalog" type="radio" name="type" value="apartments">
                       Апартаменты
                     </label>
                   </li>
@@ -108,13 +108,9 @@
               <fieldset class="selection-filter-costing">
                 <legend class="selection-filter-title-price">Стоимость, ₽:</legend>
                 <div class="slider-price">
-                  <label class="label-min" for="min">
-                    <span class="input-text">от</span>
-                  </label>
+                  <label class="label-slider label-min" for="min">от</label>
                   <input class="variable" id="min" type="text-select" name="min-cost" value="0">
-                  <label for="max" class="label-max">
-                    <span class="input-text">до</span>
-                  </label>
+                  <label for="max" class="label-slider label-max">до</label>
                   <input class="variable" id="max" type="text-select" name="max-cost" value="9000">
                 </div>
               </fieldset>
@@ -142,6 +138,7 @@
           </div>
 
 
+
           <div class="product">
             <ul class="product-list">
               <li class="product-card">
@@ -157,7 +154,7 @@
                   <span class="product-card-price">От 4000 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-blue" href="#">В избранное</a>
-                  <span class="product-stars" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-four" aria-label="Рейтинг в звездах"></span>
                   <span class="product-card-rating">Рейтинг: 8,5</span>
                 </div>
               </li>
@@ -175,7 +172,7 @@
                   <span class="product-card-price">От 5000 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-green" href="#">В избранном</a>
-                  <span class="product-stars" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-four" aria-label="Рейтинг в звездах"></span>
                   <span class="product-card-rating">Рейтинг: 9,2</span>
                 </div>
               </li>
@@ -192,7 +189,7 @@
                   <span class="product-card-price">От 2500 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-blue" href="#">В избранное</a>
-                  <span class="product-stars" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-three" aria-label="Рейтинг в звездах"></span>
                   <span class="product-card-rating">Рейтинг: 6,9</span>
                 </div>
               </li>
@@ -209,7 +206,7 @@
                   <span class="product-card-price">От 1500 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-blue" href="#">В избранное</a>
-                  <span class="product-stars" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-two" aria-label="Рейтинг в звездах"></span>
                   <span class="product-card-rating">Рейтинг: 5,0</span>
                 </div>
               </li>
