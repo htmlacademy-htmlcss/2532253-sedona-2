@@ -1357,13 +1357,12 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: rgba(242, 242, 242, 0.8);
-
-}
+  background-color: rgba(242, 242, 242, 0.8);;
+  }
 
 .modal {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   background-color: #ffffff;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.149);
   border-radius: 30px;
@@ -1373,21 +1372,37 @@ img {
 .modal-choice {
   width: 717px;
   min-height: 576px;
+  padding: 64px 70px;
 }
+
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 57px;
+  right: 10px;
   width: 256px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   background-image: url("../images/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  z-index: 5;
 }
+
+.modal-button::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background-color: red;
+  top: -90px;
+  left: 480px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -1398,32 +1413,82 @@ img {
   color: #000000;
   text-transform: uppercase;
 }
+
+.modal-group {
+  border: none;
+}
+
 .modal-form {
   position: absolute;
-  margin-top: 64px;
+  top: 320px;
   display: grid;
+  grid-template-columns: 117px 440px;
+  grid-template-rows: 48px auto 48px auto 48px auto auto;
+  column-gap: 15px;
+  row-gap: 5px;
 }
+
+.modal-list {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-date {
+  position: relative;
+  grid-row: 2;
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  list-style: none;
+}
+
+.date-control {
+  align-self: start;
+  box-sizing: border-box;
+  padding: 13px 20px 12px 20px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 60%;
+  cursor: pointer;
+}
+
 .modal-item {
   font-family: PT Sans;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  list-style: none;
+
 }
+
 .no-back-to-the-past {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ff5757;
+  padding: 0 40px;
+  margin-top: 23px;
 }
+
 .vacant {
   font-family: inherit;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+  padding: 0 40px;
+  margin-top: 23px;
 }
+
 .modal-button {
   border-radius: 10px;
   width: 577px;
@@ -1436,10 +1501,17 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  cursor: pointer;
+
+
+  .date-control {
+    min-width: 440px;
+    height: 48px;
+    padding: 12px 20px;
+    background-color: rgba(242, 242, 242, 1);
+  }
+
+  /*.modal-container-close{
+  display: none;
 }
-.date-control {
-  min-width: 440px;
-  height: 48px;
-  padding: 12px 20px;
-  background-color: rgba(242, 242, 242, 1);
-}
+*/
