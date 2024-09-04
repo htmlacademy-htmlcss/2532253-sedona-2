@@ -1,13 +1,13 @@
 const searchButton = document.querySelector('.search-button-brown');
 const modal = document.querySelector('.modal-container');
-const close = document.querySelector('.close-button') ;
+const closeButton = document.querySelector('.close-button') ;
 
 searchButton.addEventListener('click', (evt) => {
     evt.preventDefault();
-    modal.classList.remove('.close-button')
+    modal.classList.remove('modal-container-close')
 });
 
-closeModal.addEventListener('click', (evt) => {
+closeButton.addEventListener('click', (evt) => {
     evt.preventDefault();
-    modal.classList.add('.close-button')
-})
+    modal.classList.add('modal-container-close')
+});
