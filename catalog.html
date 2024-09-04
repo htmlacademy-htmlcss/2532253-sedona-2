@@ -58,8 +58,7 @@
               </a>
             </li>
             <li class="breadcrumbs-arrow">
-              <a class="breadcrumbs-link" href="#" alt="Значок стрелка">
-              </a>
+              <span class="breadcrumbs-link"></span>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -72,8 +71,6 @@
                 <legend class="selection-filter-title">Инфраструктура:</legend>
                 <ul class="selection-filter-list">
                   <li class="selection-filter-item">
-
-
                     <label class="control">
                       <input class="visually-hidden control-input group" type="checkbox" name="infrastructure"
                         value="pool" checked>
@@ -99,8 +96,6 @@
                   </li>
                 </ul>
               </fieldset>
-
-
               <fieldset class="selection-filter-catalog">
                 <legend class="selection-filter-title">Тип Жилья:</legend>
                 <ul class="selection-filter-list">
@@ -135,17 +130,17 @@
                 <legend class="selection-filter-title-price">Стоимость, ₽:</legend>
                 <div class="slider-price">
                   <label class="label-slider label-min" for="min">от</label>
-                  <input class="variable variable-min" id="min" type="text-select" name="min-cost" value="0">
+                  <input class="variable variable-min" id="min" type="text" name="min-cost" value="0">
                   <label for="max" class="label-slider label-max">до</label>
-                  <input class="variable variable-max" id="max" type="text-select" name="max-cost" value="9000">
+                  <input class="variable variable-max" id="max" type="text" name="max-cost" value="9000">
                 </div>
                 <div class="vary-container">
                   <div class="level"></div>
                   <div class="vary-line"></div>
-                  <button class="vary-handler min-vary">
+                  <button class="vary-handler min-vary" type="button">
                     <span class="visually-hidden ">Низкая цена</span>
                   </button>
-                  <button class="vary-handler max-vary">
+                  <button class="vary-handler max-vary" type="button">
                     <span class="visually-hidden">Высокая цена</span>
                   </button>
                 </div>
@@ -167,53 +162,16 @@
             </select>
 
             <div class="view">
-              <type-button class="sort-button-1" aria-label="Показать сеткой">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                  fill="none">
-                  <rect width="46" height="46" x="1" y="1" stroke="#000" stroke-width="2" rx="3" />
-                  <g fill="currentColor" clip-path="url(#a)">
-                    <path
-                      d="M20 17h-4v6h4v-6ZM32 17h-4v6h4v-6ZM26 17h-4v6h4v-6ZM20 25h-4v6h4v-6ZM32 25h-4v6h4v-6ZM26 25h-4v6h4v-6Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M16 17h16v14H16z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </type-button>
-              <type-button class="sort-button-2" aria-label="Показать по-одному">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                  fill="none">
-                  <rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3" />
-                  <g fill="currentColor" clip-path="url(#a)">
-                    <path d="M32 29H16v2h16v-2ZM30 19v6H18v-6h12Zm2-2H16v10h16V17Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M16 17h16v14H16z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </type-button>
-              <type-button class="sort-button-3" aria-label="Показать списком">
-                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
-                  fill="none">
-                  <rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3" />
-                  <g fill="currentColor" clip-path="url(#a)">
-                    <path
-                      d="M18 17h-2v2h2v-2ZM32 17H20v2h12v-2ZM18 21h-2v2h2v-2ZM32 21H20v2h12v-2ZM18 25h-2v2h2v-2ZM32 25H20v2h12v-2ZM18 29h-2v2h2v-2ZM32 29H20v2h12v-2Z" />
-                  </g>
-                  <defs>
-                    <clipPath id="a">
-                      <path fill="#fff" d="M16 17h16v14H16z" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </type-button>
+              <button class="view-type view-type-table view-type-active" type="button">
+                <span class="visually-hidden">Показать результат как таблицу</span>
+              </button>
+              <button class="view-type view-type-card" type="button">
+                <span class="visually-hidden">Показать результат как большие карточки</span>
+              </button>
+              <button class="view-type view-type-list" type="button">
+                <span class="visually-hidden">Показать результат как список</span>
+              </button>
             </div>
-
-
           </div>
           <div class="product">
             <ul class="product-list">
@@ -230,7 +188,9 @@
                   <span class="product-card-price">От 4000 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-blue" href="#">В избранное</a>
-                  <span class="product-stars product-stars-four" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-four">
+                    <span class="visually-hidden">Рейтинг в звездах - 4</span>
+                  </span>
                   <span class="product-card-rating">Рейтинг: 8,5</span>
                 </div>
               </li>
@@ -247,7 +207,9 @@
                   <span class="product-card-price">От 5000 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-green" href="#">В избранном</a>
-                  <span class="product-stars product-stars-four" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-four">
+                    <span class="visually-hidden">Рейтинг в звездах - 4</span>
+                  </span>
                   <span class="product-card-rating">Рейтинг: 9,2</span>
                 </div>
               </li>
@@ -264,7 +226,9 @@
                   <span class="product-card-price">От 2500 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-blue" href="#">В избранное</a>
-                  <span class="product-stars product-stars-three" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-three">
+                    <span class="visually-hidden">Рейтинг в звездах - 3</span>
+                  </span>
                   <span class="product-card-rating">Рейтинг: 6,9</span>
                 </div>
               </li>
@@ -281,7 +245,9 @@
                   <span class="product-card-price">От 1500 ₽</span>
                   <a class="product-card-button button-brown" href="#">Подробнее</a>
                   <a class="product-card-button button-blue" href="#">В избранное</a>
-                  <span class="product-stars product-stars-two" aria-label="Рейтинг в звездах"></span>
+                  <span class="product-stars product-stars-two">
+                    <span class="visually-hidden">Рейтинг в звездах - 2</span>
+                  </span>
                   <span class="product-card-rating">Рейтинг: 5,0</span>
                 </div>
               </li>
@@ -356,7 +322,7 @@
             <a class="link-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </div>
           <a class="footer-link" href="https://htmlacademy.ru/" aria-label="Логотип Академии">
-            <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="currentColor" />
               <path
                 d="M11.6 4.85645C10 4.85645 8.8 5.55645 8 6.55645H7.9V0.356445H5.9V15.8564H7.9V10.5564C7.9 8.45645 9.2 6.95645 11.2 6.95645C13 6.95645 14.1 8.35645 14.1 10.1564V15.8564H16.1V9.75644C16.2 6.75644 14.3 4.85645 11.6 4.85645Z"
