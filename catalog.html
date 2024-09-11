@@ -31,7 +31,7 @@
           <ul class="navigation-user">
             <li class="navigation-element">
               <a class="navigation-element-link search-link" href="catalog.html" aria-label="Значок поиска">
-                <svg class="navigation-icon" ria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="20" height="20" fill="currentColor">
                   <path fill="currentColor"
                     d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" />
@@ -40,7 +40,7 @@
             </li>
             <li class="navigation-element">
               <a class="navigation-element-link favorite-link" href="#" aria-label="Значок в избранном">
-                <svg class="navigation-icon" ria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                   width="20" height="20" fill="currentColor">
                   <path fill="currentColor"
                     d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
@@ -49,8 +49,7 @@
               </a>
             </li>
             <li class="navigation-element">
-              </a>
-              <a class="button button-brown header" href="#">Хочу сюда!
+              <a class="button button-brown header" href="#"> Хочу сюда!
               </a>
             </li>
           </ul>
@@ -59,15 +58,14 @@
       <main class="main-container page-inner">
         <section class="selection">
           <h1 class="selection-title">Гостиницы Седоны</h1>
-
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link-home" href="index.html">
-                <img src="images/icons/icon-home-breadcrumbs.svg" width="13" height="15" alt="Значок домой">
+                <span class="visually-hidden">На главную страницу</span>
               </a>
             </li>
-            <li class="breadcrumbs-arrow">
-              <span class="breadcrumbs-link"></span>
+            <li class="breadcrumbs-item">
+              <span class="breadcrumbs-arrow"></span>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Гостиницы</a>
@@ -109,7 +107,6 @@
                 <legend class="selection-filter-title">Тип Жилья:</legend>
                 <ul class="selection-filter-list">
                   <li class="selection-filter-item">
-
                     <label class="control">
                       <input class="visually-hidden control-input catalog" type="radio" name="type" value="hotel"
                         checked>
@@ -130,6 +127,7 @@
                       <span class="control-mark"></span>
                       <span class="control-label">Апартаменты</span>
                     </label>
+                  </li>
                 </ul>
               </fieldset>
               <fieldset class="selection-filter-costing">
@@ -166,7 +164,6 @@
               <option value="sort-popular">Сначала популярные</option>
               <option value="sort-expensive">Сначала дорогие</option>
             </select>
-
             <div class="view">
               <button class="view-type view-type-table view-type-active" type="button">
                 <span class="visually-hidden">Показать результат как таблицу</span>
@@ -302,7 +299,6 @@
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M24.1164 1.80445C24.2824 1.25845 24.1164 0.856445 23.3214 0.856445H20.6964C20.0284 0.856445 19.7204 1.20345 19.5534 1.58645C19.5534 1.58645 18.2184 4.78245 16.3274 6.85845C15.7154 7.46045 15.4374 7.65145 15.1034 7.65145C14.9364 7.65145 14.6854 7.46045 14.6854 6.91345V1.80445C14.6854 1.14845 14.5014 0.856445 13.9454 0.856445H9.81738C9.40038 0.856445 9.14938 1.16045 9.14938 1.44945C9.14938 2.07045 10.0954 2.21445 10.1924 3.96245V7.76045C10.1924 8.59345 10.0394 8.74444 9.70538 8.74444C8.81538 8.74444 6.65038 5.53345 5.36538 1.85945C5.11638 1.14445 4.86438 0.856445 4.19338 0.856445H1.56638C0.816382 0.856445 0.666382 1.20345 0.666382 1.58645C0.666382 2.26845 1.55638 5.65645 4.81138 10.1374C6.98138 13.1974 10.0364 14.8564 12.8194 14.8564C14.4884 14.8564 14.6944 14.4884 14.6944 13.8534V11.5404C14.6944 10.8034 14.8524 10.6564 15.3814 10.6564C15.7714 10.6564 16.4384 10.8484 17.9964 12.3234C19.7764 14.0724 20.0694 14.8564 21.0714 14.8564H23.6964C24.4464 14.8564 24.8224 14.4884 24.6064 13.7604C24.3684 13.0364 23.5184 11.9854 22.3914 10.7384C21.7794 10.0284 20.8614 9.26345 20.5824 8.88045C20.1934 8.38945 20.3044 8.17044 20.5824 7.73345C20.5824 7.73345 23.7824 3.30745 24.1154 1.80445H24.1164Z"
                     fill="currentColor" />
-                </svg>
                 </svg>
               </a>
             </li>
